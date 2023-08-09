@@ -7,15 +7,30 @@ public class TravelVacation {
     private int dias;
     private String opcional;
     
+    /**
+     * 
+     * 
+     * constructor vacio
+     */
     public TravelVacation() {
     }
 
+    /**
+     * 
+     * 
+     * constructor con pasajeros y dias
+     */
     public TravelVacation(int pasajeros, int dias) {
         this.pasajeros = pasajeros;
         this.dias = dias;
         this.opcional = null;
     }
     
+    /**
+     * 
+     * 
+     * constructor con paquetes opcionales
+     */
     public TravelVacation(int pasajeros, int dias, String opcional) {
         this.pasajeros = pasajeros;
         this.dias = dias;

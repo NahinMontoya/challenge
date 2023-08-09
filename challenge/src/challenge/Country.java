@@ -3,9 +3,19 @@ package challenge;
 public class Country {
     private String nombre;
 
+    /**
+     * 
+     * 
+     * constructor vacio
+     */
     public Country() {
     }
 
+    /**
+     * 
+     * 
+     * constructor con parametro
+     */
     public Country(String nombre) {
         this.nombre = nombre;
     }

@@ -1,18 +1,24 @@
 package challenge;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
 
 public class TravelCalculator {
 
-    public static void main(String[] args) {
+	/**
+     * 
+     * 
+     * metodo main
+     */
+	public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         // Obtener los datos del usuario
         System.out.print("Ingrese el destino de la vacación: ");
         String destinoM = scanner.nextLine();
-        String destino = destinoM.toLowerCase();
+        String destino = destinoM.toLowerCase(Locale.US);
         if (!validardestino(destino)) {
             System.out.println("El destino ingresado no es válido.Por favor ingrese uno correcto");
             return;
@@ -41,7 +47,7 @@ public class TravelCalculator {
         try {
         	
         	String respuesta = scanner.nextLine();
-        	String respuesta1 = respuesta.toUpperCase();
+        	String respuesta1 = respuesta.toUpperCase(Locale.US);
     
         	if(respuesta1.compareTo("N")==0) {
         		adicional = null;
@@ -80,7 +86,12 @@ public class TravelCalculator {
         }
     }
 
-    public static int calcularCostoTotal(TravelVacation travel, Country country) {
+	/**
+     * 
+     * 
+     * metodo para calcular costo
+     */
+	public static int calcularCostoTotal(TravelVacation travel, Country country) {
     	Map<String, Integer> opcionales = new HashMap<String, Integer>();
     	opcionales.put("All-Inclusive", 200);
     	opcionales.put("Adventure Activities", 150);
@@ -134,7 +145,13 @@ public class TravelCalculator {
 
         return costoTotal;
     }
-    public static boolean validardestino(String input) {
+    
+	/**
+     * 
+     * 
+     * metodo para validar un destino
+     */
+	public static boolean validardestino(String input) {
         String letras = "^[a-zA-Z\\s]+$";
         return input.matches(letras);
     }
