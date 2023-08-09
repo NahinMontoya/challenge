@@ -1,0 +1,10 @@
+src/challenge/Country.java:6:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/challenge/Country.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/challenge/TravelCalculator.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/challenge/TravelCalculator.java:15:	UseLocaleWithCaseConversions:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/challenge/TravelCalculator.java:44:	UseLocaleWithCaseConversions:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/challenge/TravelCalculator.java:83:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/challenge/TravelCalculator.java:137:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/challenge/TravelVacation.java:10:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/challenge/TravelVacation.java:13:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/challenge/TravelVacation.java:19:	CommentRequired:	CommentRequired: Public method and constructor comments are required
